@@ -262,7 +262,8 @@ if ($html5) { ?>
 	<footer>
 		<h1>相关链接</h1>
 		<nav>
-			<a href="https://github.com/GanlvIO/DownImd" target="_blank">开源项目</a>
+			<a href="https://github.com/ganlvtech/DownImd" target="_blank">获取源代码</a>
+			<a href="http://www.dreamimd.com/" target="_blank">睡梦中IMD下载站</a>
 			<a href="http://tieba.baidu.com/f?kw=%CB%AF%C3%CE%D6%D0" target="_blank">睡梦中吧</a>
 		</nav>
 		<address>作者：Ganlv</address>
@@ -374,7 +375,8 @@ if ($html5) { ?>
 	<div>
 		<h1>相关链接</h1>
 		<div>
-			<p><a href="https://github.com/GanlvIO/DownImd" target="_blank">开源项目</a></p>
+			<p><a href="https://github.com/ganlvtech/DownImd" target="_blank">获取源代码</a></p>
+			<p><a href="http://www.dreamimd.com/" target="_blank">睡梦中IMD下载站</a></p>
 			<p><a href="http://tieba.baidu.com/f?kw=%CB%AF%C3%CE%D6%D0" target="_blank">睡梦中吧</a></p>
 		</div>
 		<p>作者：Ganlv</p>
