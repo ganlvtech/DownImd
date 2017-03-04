@@ -48,7 +48,7 @@ if (!$cache_ok) {
 		return $xml;
 	}
 	if (($xml = getClientXML()) && preg_match_all('/<m_szSongName>(.+?)<\/m_szSongName>\\s+?<m_szPath>(.+?)<\/m_szPath>/', $xml, $matches)) {
-		$cache = array($_SERVER['REQUEST_TIME'], json_encode($matches[1]) , json_encode($matches[2]));
+		$cache = array($_SERVER['REQUEST_TIME'], json_encode($matches[1]), json_encode($matches[2]));
 		file_put_contents(CACHE_FILE, '<?php $cache = ' . var_export($cache, true) . ';');
 		$time = date('Y-m-d H:i:s', $_SERVER['REQUEST_TIME']);
 		$state = "歌曲列表时间：{$time}";
@@ -236,6 +236,9 @@ if ($html5) { ?>
 			color: #eee;
 			text-decoration: none;
 		}
+		footer nav a:hover {
+			text-decoration: underline;
+		}
 		footer address {
 			margin: 1em 0;
 			color: #999;
@@ -247,7 +250,7 @@ if ($html5) { ?>
 	<aside onclick="this.style.display='none'">
 		<h1>免责声明</h1>
 		<section>
-			<p>本页面仅共学习交流使用，请勿用于商业用途。</p>
+			<p>本页面仅供学习交流使用，请勿用于商业用途。</p>
 			<p>请使用者自觉遵守<a href="//game.qq.com/contract.shtml" target="_blank">腾讯游戏许可及服务协议</a>。</p>
 			<p>使用者应当从正规途径下载数据，否则后果自负。</p>
 		</section>
@@ -262,7 +265,7 @@ if ($html5) { ?>
 	<footer>
 		<h1>相关链接</h1>
 		<nav>
-			<a href="https://github.com/ganlvtech/DownImd" target="_blank">获取源代码</a>
+			<a href="https://github.com/ganlvtech/DownImd" target="_blank">Fork me on GitHub</a>
 			<a href="http://www.dreamimd.com/" target="_blank">睡梦中IMD下载站</a>
 			<a href="http://tieba.baidu.com/f?kw=%CB%AF%C3%CE%D6%D0" target="_blank">睡梦中吧</a>
 		</nav>
@@ -348,7 +351,7 @@ if ($html5) { ?>
 	<div>
 		<h1>免责声明：</h1>
 		<div>
-			<p>本页面仅共学习交流使用，请勿用于商业用途。</p>
+			<p>本页面仅供学习交流使用，请勿用于商业用途。</p>
 			<p>请使用者自觉遵守<a href="//game.qq.com/contract.shtml" target="_blank">腾讯游戏许可及服务协议</a>。</p>
 			<p>使用者应当从正规途径下载数据，否则后果自负。</p>
 		</div>
@@ -375,7 +378,7 @@ if ($html5) { ?>
 	<div>
 		<h1>相关链接</h1>
 		<div>
-			<p><a href="https://github.com/ganlvtech/DownImd" target="_blank">获取源代码</a></p>
+			<p><a href="https://github.com/ganlvtech/DownImd" target="_blank">Fork me on GitHub</a></p>
 			<p><a href="http://www.dreamimd.com/" target="_blank">睡梦中IMD下载站</a></p>
 			<p><a href="http://tieba.baidu.com/f?kw=%CB%AF%C3%CE%D6%D0" target="_blank">睡梦中吧</a></p>
 		</div>
